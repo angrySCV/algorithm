@@ -42,6 +42,14 @@ public final class numberTheory {
 
 	public static int nok (int a, int b) {
 		// наименьшее общее кратное - используя наибольший общий делитель
-		return a * b / nod(a, b);
+		return a / nod(a, b) * b; // для исключения переполнения при перемножении, в начале идет деление на первый элемент потом домножаем на второй
+	}
+
+	public static int primeNumber (int a) {
+		int prime = 1;
+		for (int i = 2; i < a; i++) {
+			prime = prime * i;
+		}
+		return prime - 1;
 	}
 }

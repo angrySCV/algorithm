@@ -6,5 +6,6 @@ public class Main {
 //		int chislo = scanner.nextInt();
 //		int res = phi(chislo);
 		System.out.println(nod(25, 40) + " nok: " + nok(25, 40));
+		System.out.println(primeNumber(20));
 	}
 }
