@@ -1,7 +1,6 @@
 import static algorithm.numberTheory.*;
 
 public class Main {
-
 	public static void main (String[] args) {
 		//Scanner scanner = new Scanner(System.in);
 //		int chislo = scanner.nextInt();

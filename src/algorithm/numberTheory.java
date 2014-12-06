@@ -1,7 +1,8 @@
 package algorithm;
 
 /**
- * Created by macbook on 06.12.14.
+ * Created by AngrySCV on 06.12.14.
+ * https://github.com/angrySCV
  */
 public final class numberTheory {
 	private static int result;
