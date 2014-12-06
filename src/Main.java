@@ -1,5 +1,4 @@
-import static algorithm.numberTheory.nod;
-import static algorithm.numberTheory.nok;
+import static algorithm.numberTheory.*;
 
 public class Main {
 
