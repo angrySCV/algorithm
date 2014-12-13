@@ -7,5 +7,6 @@ public class Main {
 //		int res = phi(chislo);
 		System.out.println(nod(25, 40) + " nok: " + nok(25, 40));
 		System.out.println(primeNumber(20));
+		System.out.println(fastPow(5, 8));
 	}
 }

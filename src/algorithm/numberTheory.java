@@ -52,4 +52,20 @@ public final class numberTheory {
 		}
 		return prime - 1;
 	}
+
+	public static int fastPow (int chislo, int n) {
+		// fast
+		int solution = 1;
+		while (n != 0) {
+			if ((n & 1) == 0) {
+				chislo *= chislo;
+				n = n >> 1;
+			} else {
+				solution *= chislo;
+				n -= 1;
+
+			}
+		}
+		return chislo;
+	}
 }
