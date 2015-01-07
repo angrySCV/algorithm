@@ -46,6 +46,7 @@ public final class numberTheory {
 	}
 
 	public static int primeNumber (int a) {
+		// генерация большого простого числа на основе перемножения всех множетелей до требуемого числа и вычитания еденицы, что гарантирует не делимость на эти числа
 		int prime = 1;
 		for (int i = 2; i < a; i++) {
 			prime = prime * i;
@@ -54,7 +55,7 @@ public final class numberTheory {
 	}
 
 	public static int fastPow (int chislo, int n) {
-		// fast
+		// быстрое возведение в степень за LOG(N)
 		int solution = 1;
 		while (n != 0) {
 			if ((n & 1) == 0) {
