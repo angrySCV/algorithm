@@ -71,4 +71,22 @@ public final class numberTheory {
 		}
 		return chislo;
 	}
+
+	public static int[] reshetoEratosfena (int n) {
+//		решето эратосфена для простых чисел
+		int massivChisel[] = new int[n];
+		for (int i = 1; i < n; i++) {
+			massivChisel[i] = i;
+		}
+		for (int i = 2; i * i < n; i++) {
+			if (massivChisel[i] == 0) continue;
+			for (int j = i * i; j < n; j++) {
+				if (massivChisel[j] == 0) continue;
+				if (massivChisel[j] % massivChisel[i] == 0) {
+					massivChisel[j] = 0;
+				}
+			}
+		}
+		return massivChisel;
+	}
 }
